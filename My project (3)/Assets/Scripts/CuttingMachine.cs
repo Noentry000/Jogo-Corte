@@ -15,25 +15,26 @@ public class CuttingMachine : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButton(0))
-        {
-            if (touchingSegments.Count > 0)
-            {
-                // We are touching the line
-                foreach (LineSegment segment in touchingSegments)
-                {
-                    segment.Cut();
-                }
-            }
-            else
-            {
-                // We are completely off the line
-                score -= penaltyPerSecond * Time.deltaTime;
-                score = Mathf.Max(score, 0f);
-            }
+        // Do NOTHING unless M1 is held
+        if (!Input.GetMouseButton(0))
+            return;
 
-            UpdateScore();
+        // M1 is held and we're touching the line
+        if (touchingSegments.Count > 0)
+        {
+            foreach (LineSegment segment in touchingSegments)
+            {
+                segment.Cut();
+            }
         }
+        else
+        {
+            // M1 is held but we're off the line
+            score -= penaltyPerSecond * Time.deltaTime;
+            score = Mathf.Max(score, 0f);
+        }
+
+        UpdateScore();
     }
 
     private void OnTriggerEnter(Collider other)
