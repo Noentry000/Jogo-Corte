@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class LineSegment : MonoBehaviour
 {
+    public Material blackMaterial;
     public Material greenMaterial;
 
     private Renderer lineRenderer;
-    private Material originalMaterial;
 
     public bool isCut = false;
 
@@ -13,7 +13,8 @@ public class LineSegment : MonoBehaviour
     {
         lineRenderer = GetComponent<Renderer>();
 
-        originalMaterial = lineRenderer.material;
+        isCut = false;
+        lineRenderer.material = blackMaterial;
     }
 
     public void Cut()
@@ -22,7 +23,6 @@ public class LineSegment : MonoBehaviour
             return;
 
         isCut = true;
-
         lineRenderer.material = greenMaterial;
     }
 }
