@@ -13,13 +13,13 @@ public class GerenciadorMenu3D : MonoBehaviour
 
     public void ComecarJogo()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         Debug.Log("Abrindo");
     }
 
     public void VoltarMenu()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
         Debug.Log("Menu");
     }
     
