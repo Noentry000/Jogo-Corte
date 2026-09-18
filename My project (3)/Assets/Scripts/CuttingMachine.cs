@@ -10,16 +10,27 @@ public class CuttingMachine : MonoBehaviour
 
     [Header("UI")]
     public TMP_Text scoreText;
+    public TMP_Text progressText;
 
     private HashSet<LineSegment> touchingSegments = new HashSet<LineSegment>();
+    private LineSegment[] allSegments;
+
+    void Start()
+    {
+        allSegments = FindObjectsOfType<LineSegment>();
+
+        UpdateScore();
+        UpdateProgress();
+    }
 
     void Update()
     {
-        // Do NOTHING unless M1 is held
         if (!Input.GetMouseButton(0))
+        {
+            UpdateProgress();
             return;
+        }
 
-        // M1 is held and we're touching the line
         if (touchingSegments.Count > 0)
         {
             foreach (LineSegment segment in touchingSegments)
@@ -29,12 +40,12 @@ public class CuttingMachine : MonoBehaviour
         }
         else
         {
-            // M1 is held but we're off the line
             score -= penaltyPerSecond * Time.deltaTime;
             score = Mathf.Max(score, 0f);
         }
 
         UpdateScore();
+        UpdateProgress();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -69,5 +80,25 @@ public class CuttingMachine : MonoBehaviour
         {
             scoreText.text = "Score: " + Mathf.RoundToInt(score);
         }
+    }
+
+    void UpdateProgress()
+    {
+        if (progressText == null || allSegments.Length == 0)
+            return;
+
+        int cutSegments = 0;
+
+        foreach (LineSegment segment in allSegments)
+        {
+            if (segment.isCut)
+            {
+                cutSegments++;
+            }
+        }
+
+        float progress = (float)cutSegments / allSegments.Length * 100f;
+
+        progressText.text = "Progress: " + Mathf.RoundToInt(progress) + "%";
     }
 }
