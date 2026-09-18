@@ -11,13 +11,21 @@ public class CuttingMachine : MonoBehaviour
     [Header("UI")]
     public TMP_Text scoreText;
     public TMP_Text progressText;
+    public GameObject victoryPanel;
+    public TMP_Text efficiencyText;
 
     private HashSet<LineSegment> touchingSegments = new HashSet<LineSegment>();
     private LineSegment[] allSegments;
+    private bool victory = false;
 
     void Start()
     {
         allSegments = FindObjectsOfType<LineSegment>();
+
+        if (victoryPanel != null)
+        {
+            victoryPanel.SetActive(false);
+        }
 
         UpdateScore();
         UpdateProgress();
@@ -25,9 +33,13 @@ public class CuttingMachine : MonoBehaviour
 
     void Update()
     {
+        if (victory)
+            return;
+
         if (!Input.GetMouseButton(0))
         {
             UpdateProgress();
+            CheckVictory();
             return;
         }
 
@@ -46,6 +58,7 @@ public class CuttingMachine : MonoBehaviour
 
         UpdateScore();
         UpdateProgress();
+        CheckVictory();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -100,5 +113,43 @@ public class CuttingMachine : MonoBehaviour
         float progress = (float)cutSegments / allSegments.Length * 100f;
 
         progressText.text = "Progress: " + Mathf.RoundToInt(progress) + "%";
+    }
+
+    void CheckVictory()
+    {
+        if (allSegments.Length == 0)
+            return;
+
+        int cutSegments = 0;
+
+        foreach (LineSegment segment in allSegments)
+        {
+            if (segment.isCut)
+            {
+                cutSegments++;
+            }
+        }
+
+        float progress = (float)cutSegments / allSegments.Length * 100f;
+
+        if (progress >= 100f)
+        {
+            Victory();
+        }
+    }
+
+    void Victory()
+    {
+        victory = true;
+
+        if (victoryPanel != null)
+        {
+            victoryPanel.SetActive(true);
+        }
+
+        if (efficiencyText != null)
+        {
+            efficiencyText.text = "EFICIENCIA: " + Mathf.RoundToInt(score) + "%";
+        }
     }
 }

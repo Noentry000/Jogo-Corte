@@ -16,6 +16,12 @@ public class GerenciadorMenu3D : MonoBehaviour
         SceneManager.LoadScene(0);
         Debug.Log("Abrindo");
     }
+
+    public void VoltarMenu()
+    {
+        SceneManager.LoadScene(1);
+        Debug.Log("Menu");
+    }
     
     public void FecharJogo()
     {
