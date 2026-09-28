@@ -6,7 +6,8 @@ public class Dialogue : MonoBehaviour
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
-
+    public GameObject mascot;
+    public GameObject panel;
     private int index;
     void Start()
     {
@@ -17,13 +18,40 @@ public class Dialogue : MonoBehaviour
    
     void Update()
     {
-        
+        if(Input.GetMouseButtonDown(0))
+        {
+            if (textComponent.text == lines[index])
+            {
+                NextLine();
+            }
+            else
+            {
+                StopAllCoroutines();
+                textComponent.text = lines[index];
+            }
+        }
     }
 
     void StartDialogue()
     {
         index = 0;
         StartCoroutine(TypeLine());
+    }
+
+    void NextLine()
+    {
+        if(index < lines.Length - 1)
+        {
+            index++;
+            textComponent.text = string.Empty;
+            StartCoroutine(TypeLine());
+        }
+        else
+        {
+            gameObject.SetActive(false);
+            mascot.SetActive(false);
+            panel.SetActive(false);
+        }
     }
 
     IEnumerator TypeLine()
