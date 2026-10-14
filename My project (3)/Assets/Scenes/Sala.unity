@@ -2934,8 +2934,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1374360537}
   lines:
-  - Oi galerinha do utube
-  - Oi galerinha  utube dois tres
+  - "Opa! Fala a\xED, futuro mestre do corte! Seja muito bem-vindo ao galp\xE3o de
+    confec\xE7\xE3o! "
+  - "Antes de ligar a l\xE2mina, precisamos passar pela seguran\xE7a e pelas regras
+    da NR-12."
+  - "Afinal, tecido a gente costura de volta... mas dedo n\xE3o d\xE1 pra pregar
+    na m\xE1quina, n\xE9?"
+  - "O motor el\xE9trico da m\xE1quina de corte \xE9 alto e fica rodando continuamente
+    no galp\xE3o."
+  - "Sem prote\xE7\xE3o, esse ru\xEDdo causa perda auditiva e uma fadiga que faz
+    at\xE9 sua vis\xE3o tremer!"
+  - Para proteger seus ouvidos, pegue aquele Protetor Auricular na bancada e equipe!
   textSpeed: 0.05
   mascot: {fileID: 1601645489}
   panel: {fileID: 1975776731}
