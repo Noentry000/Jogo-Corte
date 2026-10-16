@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement; // NEW
 using TMPro;
 using System.Collections;
 public class Dialogue : MonoBehaviour
@@ -9,19 +10,19 @@ public class Dialogue : MonoBehaviour
     public GameObject mascot;
     public GameObject panel;
     public int[] stopAfterLines; // line indexes after which the dialogue closes, e.g. 2, 5, 8
-    public GameObject choicesGroup; // NEW: empty parent holding the 4 objects
+    public GameObject choicesGroup; // empty parent holding the 4 objects
     private int index;
     private bool dialogueActive;
-    private int stopsReached = 0; 
-    private bool waitingForChoice = false; 
+    private int stopsReached = 0;
+    private bool waitingForChoice = false;
 
-    public bool WaitingForChoice { get { return waitingForChoice; } } 
-    public int CurrentStop { get { return stopsReached - 1; } } // NEW: 0 = first stop
+    public bool WaitingForChoice { get { return waitingForChoice; } }
+    public int CurrentStop { get { return stopsReached - 1; } } // 0 = first stop
 
     void Start()
     {
         textComponent.text = string.Empty;
-        choicesGroup.SetActive(false); 
+        choicesGroup.SetActive(false);
         StartDialogue();
     }
 
@@ -61,8 +62,8 @@ public class Dialogue : MonoBehaviour
     {
         if (dialogueActive || index >= lines.Length - 1) return;
 
-        waitingForChoice = false; 
-        choicesGroup.SetActive(false); 
+        waitingForChoice = false;
+        choicesGroup.SetActive(false);
         textComponent.enabled = true;
         mascot.SetActive(true);
         panel.SetActive(true);
@@ -92,9 +93,9 @@ public class Dialogue : MonoBehaviour
                 textComponent.enabled = false;
                 mascot.SetActive(false);
                 panel.SetActive(false);
-                stopsReached++; 
-                waitingForChoice = true; 
-                choicesGroup.SetActive(true); 
+                stopsReached++;
+                waitingForChoice = true;
+                choicesGroup.SetActive(true);
                 return;
             }
 
@@ -107,6 +108,7 @@ public class Dialogue : MonoBehaviour
             gameObject.SetActive(false);
             mascot.SetActive(false);
             panel.SetActive(false);
+            SceneManager.LoadScene(1); // NEW: load the scene at build index 1
         }
     }
 
