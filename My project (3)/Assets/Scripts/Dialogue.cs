@@ -9,12 +9,19 @@ public class Dialogue : MonoBehaviour
     public GameObject mascot;
     public GameObject panel;
     public int[] stopAfterLines; // line indexes after which the dialogue closes, e.g. 2, 5, 8
+    public GameObject choicesGroup; // NEW: empty parent holding the 4 objects
     private int index;
     private bool dialogueActive;
+    private int stopsReached = 0; 
+    private bool waitingForChoice = false; 
+
+    public bool WaitingForChoice { get { return waitingForChoice; } } 
+    public int CurrentStop { get { return stopsReached - 1; } } // NEW: 0 = first stop
 
     void Start()
     {
         textComponent.text = string.Empty;
+        choicesGroup.SetActive(false); 
         StartDialogue();
     }
 
@@ -54,6 +61,9 @@ public class Dialogue : MonoBehaviour
     {
         if (dialogueActive || index >= lines.Length - 1) return;
 
+        waitingForChoice = false; 
+        choicesGroup.SetActive(false); 
+        textComponent.enabled = true;
         mascot.SetActive(true);
         panel.SetActive(true);
         dialogueActive = true;
@@ -77,10 +87,14 @@ public class Dialogue : MonoBehaviour
         {
             if (IsStopPoint(index))
             {
-                // Pause: hide the dialogue but keep this script active so it can resume later
+                // Pause: hide everything but keep this object and script active
                 dialogueActive = false;
+                textComponent.enabled = false;
                 mascot.SetActive(false);
                 panel.SetActive(false);
+                stopsReached++; 
+                waitingForChoice = true; 
+                choicesGroup.SetActive(true); 
                 return;
             }
 
