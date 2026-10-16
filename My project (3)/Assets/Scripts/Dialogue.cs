@@ -108,7 +108,7 @@ public class Dialogue : MonoBehaviour
             gameObject.SetActive(false);
             mascot.SetActive(false);
             panel.SetActive(false);
-            SceneManager.LoadScene(1); // NEW: load the scene at build index 1
+            SceneManager.LoadScene(2); // NEW: load the scene at build index 1
         }
     }
 
