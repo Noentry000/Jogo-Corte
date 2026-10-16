@@ -490,6 +490,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 1374360536}
   correctForStop: 0
+  correctSound: {fileID: 8300000, guid: ad35292f936f2084984bb637d58ce012, type: 3}
+  wrongSound: {fileID: 8300000, guid: c3a86abeafcf8ac4183d49c833359b8e, type: 3}
+  soundVolume: 1
 --- !u!4 &283859637 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 96f37b0c48d2e0f4c920126e32a1d570, type: 3}
@@ -1130,6 +1133,135 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+--- !u!1 &473021926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 473021928}
+  - component: {fileID: 473021927}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &473021927
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473021926}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 05ae2718a03d3104e9ad230a271d2d06, type: 3}
+  m_Resource: {fileID: 8300000, guid: 05ae2718a03d3104e9ad230a271d2d06, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &473021928
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473021926}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.09423, y: -0, z: 21.24274}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &489745257
 GameObject:
   m_ObjectHideFlags: 0
@@ -2006,6 +2138,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2912a2d99cc507e408bef498a156d4da, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1518920823}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2912a2d99cc507e408bef498a156d4da, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1518920824}
   m_SourcePrefab: {fileID: 100100000, guid: 2912a2d99cc507e408bef498a156d4da, type: 3}
 --- !u!1001 &840663537
 PrefabInstance:
@@ -2150,6 +2285,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b9cfaac4518c0af41a8fbad28da862f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 861550912}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b9cfaac4518c0af41a8fbad28da862f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 861550913}
   m_SourcePrefab: {fileID: 100100000, guid: b9cfaac4518c0af41a8fbad28da862f8, type: 3}
 --- !u!1 &861550909 stripped
 GameObject:
@@ -2220,6 +2358,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 1374360536}
   correctForStop: 3
+  correctSound: {fileID: 8300000, guid: ad35292f936f2084984bb637d58ce012, type: 3}
+  wrongSound: {fileID: 8300000, guid: c3a86abeafcf8ac4183d49c833359b8e, type: 3}
+  soundVolume: 1
+--- !u!65 &861550913
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861550909}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 4.334485, z: 3.421402}
+  m_Center: {x: 0.00000005192735, y: 3.200723, z: 0.6731212}
 --- !u!1 &887017061
 GameObject:
   m_ObjectHideFlags: 0
@@ -3059,8 +3221,6 @@ MonoBehaviour:
   - "Boa! Notou como o som do galp\xE3o abafou? Agora sua audi\xE7\xE3o t\xE1 protegida! "
   - "Enquanto a l\xE2mina corta o tecido, ela lan\xE7a centenas de fiapos e poeira
     fina no ar. "
-  - "Enquanto a l\xE2mina corta o tecido, ela lan\xE7a centenas de fiapos e poeira
-    fina no ar. "
   - "Se uma sujeira dessa cair no seu olho, voc\xEA perde a vis\xE3o do molde no
     meio de uma curva! "
   - "Por isso, clica ali nos \xD3culos de Prote\xE7\xE3o para blindar a sua vis\xE3o! "
@@ -3071,10 +3231,20 @@ MonoBehaviour:
   - "Inalar o p\xF3 de tecido causa crises de tosse, e cada tranco faz a m\xE1quina
     desviar do molde! "
   - "Pegue a M\xE1scara Respirat\xF3ria PFF2 ali na mesa para garantir um ar limpo! "
+  - "Show de bola! A m\xE1scara vai filtrar o ar e evitar qualquer tranco de tosse
+    na opera\xE7\xE3o. "
+  - "Agora o item mais importante do chassi: a m\xE3o de apoio segura o tecido perto
+    da l\xE2mina. "
+  - "Qualquer deslize do motor sem prote\xE7\xE3o pode causar um acidente grav\xEDssimo
+    no corte! "
+  - "A Luva de Malha de A\xE7o \xE9 o seu escudo. Clica nela para vestir na m\xE3o
+    esquerda! "
+  - "Checklist 100% completo! Voc\xEA t\xE1 pronto padr\xE3o NR! "
+  - Boa sorte e bom corte!
   textSpeed: 0.05
   mascot: {fileID: 1601645489}
   panel: {fileID: 1975776731}
-  stopAfterLines: 050000000a000000
+  stopAfterLines: 05000000090000000d00000011000000
   choicesGroup: {fileID: 887017061}
 --- !u!114 &1374360537
 MonoBehaviour:
@@ -3388,6 +3558,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 1374360536}
   correctForStop: 2
+  correctSound: {fileID: 8300000, guid: ad35292f936f2084984bb637d58ce012, type: 3}
+  wrongSound: {fileID: 8300000, guid: c3a86abeafcf8ac4183d49c833359b8e, type: 3}
+  soundVolume: 1
+--- !u!65 &1518920824
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518920819}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01191706, y: 0.019493088, z: 0.011152663}
+  m_Center: {x: -0.004981005, y: 3.0568195e-10, z: -0.00008626799}
 --- !u!1 &1601444796
 GameObject:
   m_ObjectHideFlags: 0
@@ -3993,6 +4187,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 14d72bfad06e0bd44a2ab97968418fd8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1914976511}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 14d72bfad06e0bd44a2ab97968418fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1914976512}
   m_SourcePrefab: {fileID: 100100000, guid: 14d72bfad06e0bd44a2ab97968418fd8, type: 3}
 --- !u!1 &1914976508 stripped
 GameObject:
@@ -4063,6 +4260,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 1374360536}
   correctForStop: 1
+  correctSound: {fileID: 8300000, guid: ad35292f936f2084984bb637d58ce012, type: 3}
+  wrongSound: {fileID: 8300000, guid: c3a86abeafcf8ac4183d49c833359b8e, type: 3}
+  soundVolume: 1
+--- !u!65 &1914976512
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914976508}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.4449344, y: 1, z: 6.007624}
+  m_Center: {x: 2.222467, y: 0, z: 0.30290252}
 --- !u!1 &1975776731
 GameObject:
   m_ObjectHideFlags: 0
@@ -4589,3 +4810,4 @@ SceneRoots:
   - {fileID: 374159365}
   - {fileID: 113320373}
   - {fileID: 1806964558}
+  - {fileID: 473021928}
