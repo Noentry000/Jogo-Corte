@@ -16809,7 +16809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4735ab15827a114dad4fd9b04430e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tela: {fileID: 0}
+  tela: {fileID: 962881936}
 --- !u!1 &946373415
 GameObject:
   m_ObjectHideFlags: 0
