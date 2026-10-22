@@ -16750,6 +16750,7 @@ GameObject:
   - component: {fileID: 944343440}
   - component: {fileID: 944343439}
   - component: {fileID: 944343441}
+  - component: {fileID: 944343442}
   m_Layer: 0
   m_Name: GAMEMANAGER
   m_TagString: Untagged
@@ -16796,6 +16797,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6211705f8b170fe4591b0be912cb7ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &944343442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944343438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4735ab15827a114dad4fd9b04430e31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tela: {fileID: 0}
 --- !u!1 &946373415
 GameObject:
   m_ObjectHideFlags: 0
@@ -29427,13 +29441,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 944343438}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 944343442}
+        m_TargetAssemblyTypeName: PauseScript, Assembly-CSharp
+        m_MethodName: ResumeButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -30874,9 +30888,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 944343441}
-        m_TargetAssemblyTypeName: GerenciadorMenu3D, Assembly-CSharp
-        m_MethodName: VoltarMenu
+      - m_Target: {fileID: 944343442}
+        m_TargetAssemblyTypeName: PauseScript, Assembly-CSharp
+        m_MethodName: MenuButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
