@@ -16946,6 +16946,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tela: {fileID: 962881936}
+  hideWhilePaused:
+  - {fileID: 1340491608}
 --- !u!1 &946373415
 GameObject:
   m_ObjectHideFlags: 0
@@ -23607,6 +23609,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310496286}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1340491608 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8148890763849839673, guid: 52205bf73bae0fe4eaf64b0bdf5a58de, type: 3}
+  m_PrefabInstance: {fileID: 938306889}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1345241770
 GameObject:
   m_ObjectHideFlags: 0

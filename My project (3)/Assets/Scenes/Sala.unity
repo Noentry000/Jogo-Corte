@@ -3760,6 +3760,10 @@ MonoBehaviour:
   - "Checklist 100% completo! Voc\xEA t\xE1 pronto padr\xE3o NR! "
   - "Na fase, aperte o bot\xE3o esquerdo do mouse para cortar e W-A-S-D para se movimentar!"
   - "Seu objetivo ser\xE1 cortar nas linhas pretas at\xE9 completar a fase inteira!"
+  - "A barra azul representa sua efici\xEAncia: corte nas linhas para manter essa
+    barrinha cheia!"
+  - "A outra barra \xE9 seu progresso, e o quanto mais cheia estiver, mais pr\xF3ximo
+    voc\xEA est\xE1 da vit\xF3ria!"
   - Boa sorte e bom corte!
   textSpeed: 0.05
   mascot: {fileID: 1601645489}

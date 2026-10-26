@@ -9971,6 +9971,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tela: {fileID: 962881936}
+  hideWhilePaused:
+  - {fileID: 5170554459629352451}
 --- !u!1 &946392879 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4522811626581568656, guid: a33c3d3cdbcd9684187ee464da7f2790, type: 3}
@@ -23565,6 +23567,11 @@ PrefabInstance:
 --- !u!224 &5170554459629352450 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5821313886413399749, guid: 52205bf73bae0fe4eaf64b0bdf5a58de, type: 3}
+  m_PrefabInstance: {fileID: 5170554459629352449}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5170554459629352451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8148890763849839673, guid: 52205bf73bae0fe4eaf64b0bdf5a58de, type: 3}
   m_PrefabInstance: {fileID: 5170554459629352449}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9133512959029003091

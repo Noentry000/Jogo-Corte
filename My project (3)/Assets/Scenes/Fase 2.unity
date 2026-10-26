@@ -15768,6 +15768,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52205bf73bae0fe4eaf64b0bdf5a58de, type: 3}
+--- !u!1 &649512997 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8148890763849839673, guid: 52205bf73bae0fe4eaf64b0bdf5a58de, type: 3}
+  m_PrefabInstance: {fileID: 649512996}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &658164986
 GameObject:
   m_ObjectHideFlags: 0
@@ -20169,11 +20174,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6652815349795033042, guid: a33c3d3cdbcd9684187ee464da7f2790, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6652815349795033042, guid: a33c3d3cdbcd9684187ee464da7f2790, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6652815349795033042, guid: a33c3d3cdbcd9684187ee464da7f2790, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -22975,6 +22980,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tela: {fileID: 962881936}
+  hideWhilePaused:
+  - {fileID: 649512997}
 --- !u!1 &948862807
 GameObject:
   m_ObjectHideFlags: 0
