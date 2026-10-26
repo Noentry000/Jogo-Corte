@@ -272,7 +272,7 @@ MonoBehaviour:
   cutVolume: 1
   victorySound: {fileID: 8300000, guid: 60af2bfeedec8b848bebd7d87ab4578f, type: 3}
   victoryVolume: 1
-  defeatSound: {fileID: 0}
+  defeatSound: {fileID: 8300000, guid: 053d56a29ab2e924a8308e3cd01bd5c3, type: 3}
   defeatVolume: 1
 --- !u!54 &599739
 Rigidbody:
