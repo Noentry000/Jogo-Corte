@@ -1,3 +1,4 @@
 mango studios inc
-[https://drive.google.com/file/d/17KVX9kxrwC4WIzOg3xPsALmvIzFBt5_M/view?usp=sharing](https://drive.google.com/file/d/1mDC9jSZD2aelmC5c47q_v_AK7kPLYA7H/view?usp=sharing)
+para acessar a build mais atual, entre na aba de RELEASES! a mais de cima é a mais atualizada
+shoutout hussarific
 todos os direitos reservados
