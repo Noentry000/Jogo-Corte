@@ -24,4 +24,9 @@ public class PauseScript : MonoBehaviour
         SceneManager.LoadScene(0);
         Debug.Log("Sent to Menu");
     }
+
+    public void ResetButton()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }

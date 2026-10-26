@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class CuttingMachine : MonoBehaviour
@@ -9,10 +10,11 @@ public class CuttingMachine : MonoBehaviour
     public float penaltyPerSecond = 5f;
 
     [Header("UI")]
-    public TMP_Text scoreText;
-    public TMP_Text progressText;
+    public Image efficiencyBar;
+    public Image progressBar;
     public GameObject victoryPanel;
     public TMP_Text efficiencyText;
+    public GameObject defeatPanel;
 
     [Header("Audio")]
     public AudioSource audioSource;
@@ -20,13 +22,19 @@ public class CuttingMachine : MonoBehaviour
     [Range(0f, 1f)] public float cutVolume = 1f;
     public AudioClip victorySound;
     [Range(0f, 1f)] public float victoryVolume = 1f;
+    public AudioClip defeatSound;
+    [Range(0f, 1f)] public float defeatVolume = 1f;
 
     private HashSet<LineSegment> touchingSegments = new HashSet<LineSegment>();
     private LineSegment[] allSegments;
     private bool victory = false;
+    private bool defeat = false;
+    private float maxScore;
 
     void Start()
     {
+        maxScore = score;
+
         allSegments = FindObjectsOfType<LineSegment>();
 
         if (audioSource == null)
@@ -39,13 +47,18 @@ public class CuttingMachine : MonoBehaviour
             victoryPanel.SetActive(false);
         }
 
+        if (defeatPanel != null)
+        {
+            defeatPanel.SetActive(false);
+        }
+
         UpdateScore();
         UpdateProgress();
     }
 
     void Update()
     {
-        if (victory)
+        if (victory || defeat)
             return;
 
         if (!Input.GetMouseButton(0))
@@ -73,6 +86,13 @@ public class CuttingMachine : MonoBehaviour
 
         UpdateScore();
         UpdateProgress();
+
+        if (score <= 0f)
+        {
+            Defeat();
+            return;
+        }
+
         CheckVictory();
     }
 
@@ -129,15 +149,15 @@ public class CuttingMachine : MonoBehaviour
 
     void UpdateScore()
     {
-        if (scoreText != null)
+        if (efficiencyBar != null)
         {
-            scoreText.text = "Score: " + Mathf.RoundToInt(score);
+            efficiencyBar.fillAmount = score / maxScore;
         }
     }
 
     void UpdateProgress()
     {
-        if (progressText == null || allSegments.Length == 0)
+        if (progressBar == null || allSegments.Length == 0)
             return;
 
         int cutSegments = 0;
@@ -150,9 +170,7 @@ public class CuttingMachine : MonoBehaviour
             }
         }
 
-        float progress = (float)cutSegments / allSegments.Length * 100f;
-
-        progressText.text = "Progress: " + Mathf.RoundToInt(progress) + "%";
+        progressBar.fillAmount = (float)cutSegments / allSegments.Length;
     }
 
     void CheckVictory()
@@ -197,6 +215,23 @@ public class CuttingMachine : MonoBehaviour
         if (efficiencyText != null)
         {
             efficiencyText.text = "EFICIENCIA: " + Mathf.RoundToInt(score) + "%";
+        }
+    }
+
+    void Defeat()
+    {
+        defeat = true;
+
+        StopCutSound();
+
+        if (audioSource != null && defeatSound != null)
+        {
+            audioSource.PlayOneShot(defeatSound, defeatVolume);
+        }
+
+        if (defeatPanel != null)
+        {
+            defeatPanel.SetActive(true);
         }
     }
 }
