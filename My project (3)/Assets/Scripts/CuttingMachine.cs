@@ -12,6 +12,8 @@ public class CuttingMachine : MonoBehaviour
     [Header("UI")]
     public Image efficiencyBar;
     public Image progressBar;
+    public GameObject efficiencyBackground;
+    public GameObject progressBackground;
     public GameObject victoryPanel;
     public TMP_Text efficiencyText;
     public GameObject defeatPanel;
@@ -196,11 +198,35 @@ public class CuttingMachine : MonoBehaviour
         }
     }
 
+    void HideBars()
+    {
+        if (efficiencyBar != null)
+        {
+            efficiencyBar.gameObject.SetActive(false);
+        }
+
+        if (progressBar != null)
+        {
+            progressBar.gameObject.SetActive(false);
+        }
+
+        if (efficiencyBackground != null)
+        {
+            efficiencyBackground.SetActive(false);
+        }
+
+        if (progressBackground != null)
+        {
+            progressBackground.SetActive(false);
+        }
+    }
+
     void Victory()
     {
         victory = true;
 
         StopCutSound();
+        HideBars();
 
         if (audioSource != null && victorySound != null)
         {
@@ -223,6 +249,7 @@ public class CuttingMachine : MonoBehaviour
         defeat = true;
 
         StopCutSound();
+        HideBars();
 
         if (audioSource != null && defeatSound != null)
         {
