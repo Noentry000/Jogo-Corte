@@ -2788,6 +2788,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tela: {fileID: 1647586084}
+  hideWhilePaused:
+  - {fileID: 1276910973}
 --- !u!1 &1008951419
 GameObject:
   m_ObjectHideFlags: 0
