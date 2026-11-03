@@ -10,30 +10,57 @@ public class ColorblindScreen : MonoBehaviour
 {
     public enum Mode { Normal = 0, Protanopia = 1, Deuteranopia = 2, Tritanopia = 3 }
 
+    public static ColorblindScreen Instance { get; private set; }
+
     [SerializeField] Mode mode = Mode.Normal;
-    [Tooltip("Desligado: simula o daltonismo. Ligado: corrige as cores para ajudar quem tem a condição.")]
     [SerializeField] bool correct = false;
-    [Tooltip("Marque se a imagem aparecer de cabeça para baixo")]
     [SerializeField] bool flipY = false;
+
+    public Mode CurrentMode => mode;
+    public bool Correct => correct;
 
     Material material;
     RenderTexture rt;
+
+    const string ModeKey = "colorblind_mode";
+    const string CorrectKey = "colorblind_correct";
 
     static readonly int ModeId = Shader.PropertyToID("_Mode");
     static readonly int CorrectId = Shader.PropertyToID("_Correct");
     static readonly int FlipId = Shader.PropertyToID("_Flip");
 
-    // Use em Dropdown e Toggle da UI
-    public void SetMode(int m) { mode = (Mode)m; }
-    public void SetCorrect(bool c) { correct = c; }
+    void Awake()
+    {
+        // Só pode existir um, e ele persiste entre cenas
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        // Carrega a escolha salva
+        mode = (Mode)PlayerPrefs.GetInt(ModeKey, (int)mode);
+        correct = PlayerPrefs.GetInt(CorrectKey, correct ? 1 : 0) == 1;
+    }
+
+    public void SetMode(int m)
+    {
+        mode = (Mode)m;
+        PlayerPrefs.SetInt(ModeKey, m);
+        PlayerPrefs.Save();
+    }
+
+    public void SetCorrect(bool c)
+    {
+        correct = c;
+        PlayerPrefs.SetInt(CorrectKey, c ? 1 : 0);
+        PlayerPrefs.Save();
+    }
 
     void OnEnable()
     {
         var shader = Resources.Load<Shader>("ColorblindScreen");
         if (shader == null)
         {
-            Debug.LogError("Shader ColorblindScreen não encontrado em Assets/Resources. " +
-                           "Selecione o script no Editor para ele ser gerado.");
+            Debug.LogError("Shader ColorblindScreen não encontrado em Assets/Resources.");
             enabled = false;
             return;
         }
@@ -73,7 +100,6 @@ public class ColorblindScreen : MonoBehaviour
     }
 
 #if UNITY_EDITOR
-    // Gera o arquivo do shader automaticamente
     void Reset() => ColorblindShaderGenerator.Ensure();
     void OnValidate() => ColorblindShaderGenerator.Ensure();
 #endif
@@ -84,18 +110,18 @@ public class ColorblindScreen : MonoBehaviour
 static class ColorblindShaderGenerator
 {
     const string Folder = "Assets/Resources";
-    const string Path_ = "Assets/Resources/ColorblindScreen.shader";
+    const string ShaderPath = "Assets/Resources/ColorblindScreen.shader";
 
     static ColorblindShaderGenerator() => EditorApplication.delayCall += Ensure;
 
     public static void Ensure()
     {
-        if (File.Exists(Path_)) return;
+        if (File.Exists(ShaderPath)) return;
 
         Directory.CreateDirectory(Folder);
-        File.WriteAllText(Path_, ShaderSource);
-        AssetDatabase.ImportAsset(Path_);
-        Debug.Log("ColorblindScreen: shader gerado em " + Path_);
+        File.WriteAllText(ShaderPath, ShaderSource);
+        AssetDatabase.ImportAsset(ShaderPath);
+        Debug.Log("ColorblindScreen: shader gerado em " + ShaderPath);
     }
 
     const string ShaderSource = @"
