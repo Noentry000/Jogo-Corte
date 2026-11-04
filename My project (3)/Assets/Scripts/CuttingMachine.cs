@@ -18,6 +18,8 @@ public class CuttingMachine : MonoBehaviour
     public GameObject victoryPanel;
     public TMP_Text efficiencyText;
     public GameObject defeatPanel;
+    public GameObject helpPanel;
+    public GameObject helpButton;
 
     [Header("Audio")]
     public AudioSource audioSource;
@@ -239,6 +241,16 @@ public class CuttingMachine : MonoBehaviour
 
         StopCutSound();
         HideBars();
+
+        if (helpPanel != null)
+        {
+            helpPanel.SetActive(false);
+        }
+
+        if (helpButton != null)
+        {
+            helpButton.SetActive(false);
+        }
 
         if (audioSource != null && victorySound != null)
         {

@@ -270,6 +270,8 @@ MonoBehaviour:
   victoryPanel: {fileID: 193985137}
   efficiencyText: {fileID: 1160043432}
   defeatPanel: {fileID: 262942573}
+  helpPanel: {fileID: 1629138078}
+  helpButton: {fileID: 8980177}
   audioSource: {fileID: 573728628}
   cutSound: {fileID: 8300000, guid: f8c919efe5c600443926b5f3b8af5071, type: 3}
   cutVolume: 1
@@ -778,6 +780,22 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4649049082726859344, guid: e5c2cae39333f3642832a18778b681f6, type: 3}
   m_PrefabInstance: {fileID: 8980175}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8980177 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7364029716193348132, guid: e5c2cae39333f3642832a18778b681f6, type: 3}
+  m_PrefabInstance: {fileID: 8980175}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8980178 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3371888631418467338, guid: e5c2cae39333f3642832a18778b681f6, type: 3}
+  m_PrefabInstance: {fileID: 8980175}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8980177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &14400760
 GameObject:
   m_ObjectHideFlags: 0
@@ -17123,6 +17141,8 @@ MonoBehaviour:
   tela: {fileID: 962881936}
   hideWhilePaused:
   - {fileID: 1340491608}
+  - {fileID: 8980177}
+  - {fileID: 1629138078}
 --- !u!114 &944343443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17140,7 +17160,7 @@ MonoBehaviour:
   pages:
   - {fileID: -2127840169, guid: 4a72d0dbf074c8f4cbef40ba68d5b38d, type: 3}
   - {fileID: -705561446, guid: e5739ab9c204af640a01b166bbbc2c1e, type: 3}
-  openButton: {fileID: 0}
+  openButton: {fileID: 8980178}
   nextButton: {fileID: 1629138076}
   backButton: {fileID: 1629138075}
   exitButton: {fileID: 1629138073}
@@ -24634,7 +24654,7 @@ GameObject:
   - component: {fileID: 1420448078}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

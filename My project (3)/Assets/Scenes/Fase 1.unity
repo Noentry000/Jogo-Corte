@@ -270,6 +270,8 @@ MonoBehaviour:
   victoryPanel: {fileID: 193985137}
   efficiencyText: {fileID: 1160043432}
   defeatPanel: {fileID: 946392879}
+  helpPanel: {fileID: 1684676682}
+  helpButton: {fileID: 7121000741517559397}
   audioSource: {fileID: 1209552788}
   cutSound: {fileID: 8300000, guid: f8c919efe5c600443926b5f3b8af5071, type: 3}
   cutVolume: 1
@@ -9999,6 +10001,8 @@ MonoBehaviour:
   tela: {fileID: 962881936}
   hideWhilePaused:
   - {fileID: 5170554459629352451}
+  - {fileID: 7121000741517559397}
+  - {fileID: 1684676682}
 --- !u!114 &944343443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11605,7 +11609,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3371888631418467338, guid: e5c2cae39333f3642832a18778b681f6, type: 3}
   m_PrefabInstance: {fileID: 7121000741517559396}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 7121000741517559397}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -24100,6 +24104,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5c2cae39333f3642832a18778b681f6, type: 3}
+--- !u!1 &7121000741517559397 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7364029716193348132, guid: e5c2cae39333f3642832a18778b681f6, type: 3}
+  m_PrefabInstance: {fileID: 7121000741517559396}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8185534277137461226
 PrefabInstance:
   m_ObjectHideFlags: 0
