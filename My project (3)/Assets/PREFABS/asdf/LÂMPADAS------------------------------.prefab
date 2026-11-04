@@ -1,0 +1,960 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7546035096232497511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2427030602400937453}
+  m_Layer: 0
+  m_Name: "L\xC2MPADAS------------------------------"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2427030602400937453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7546035096232497511}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 27.1796, y: 0, z: -20.4891}
+  m_LocalScale: {x: 14.207126, y: 1, z: 9.418139}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7881631514910221646}
+  - {fileID: 3589992654267732947}
+  - {fileID: 2932672005177349976}
+  - {fileID: 2033652051142819176}
+  - {fileID: 2141605939189500618}
+  - {fileID: 3951977324695736717}
+  - {fileID: 4917015960227109266}
+  - {fileID: 4376110403673400233}
+  - {fileID: 8547323733454035613}
+  - {fileID: 3402817004936225951}
+  - {fileID: 5931584345391672351}
+  - {fileID: 5462233879007556492}
+  - {fileID: 2788658167084898557}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1887635224150191393
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2427030602400937453}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.07038721
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.10617808
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.8351686
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 61.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.8743424
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_Name
+      value: LAMPADA INDUSTRIAL (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+--- !u!4 &2141605939189500618 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+  m_PrefabInstance: {fileID: 1887635224150191393}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1995730949222029955
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2427030602400937453}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.07038721
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.10617808
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0572441
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 61.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.8743424
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_Name
+      value: LAMPADA INDUSTRIAL (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+--- !u!4 &2033652051142819176 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+  m_PrefabInstance: {fileID: 1995730949222029955}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2394213707361763094
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2427030602400937453}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.07038721
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.10617808
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.8351686
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 61.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.86950284
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_Name
+      value: LAMPADA INDUSTRIAL (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+--- !u!4 &2788658167084898557 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+  m_PrefabInstance: {fileID: 2394213707361763094}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2932834515617088372
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2427030602400937453}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.07038721
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.10617808
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5189277
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 61.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.86950284
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_Name
+      value: LAMPADA INDUSTRIAL (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+--- !u!4 &3402817004936225951 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+  m_PrefabInstance: {fileID: 2932834515617088372}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3402549627837837491
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2427030602400937453}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.07038721
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.10617808
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.23788065
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 61.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.8743424
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_Name
+      value: LAMPADA INDUSTRIAL (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+--- !u!4 &2932672005177349976 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+  m_PrefabInstance: {fileID: 3402549627837837491}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3554051547067201126
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2427030602400937453}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.07038721
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.10617808
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5189277
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 61.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2392
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_Name
+      value: LAMPADA INDUSTRIAL (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+--- !u!4 &3951977324695736717 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+  m_PrefabInstance: {fileID: 3554051547067201126}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3916036217528824888
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2427030602400937453}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.07038721
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.10617808
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5189277
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 61.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.8743424
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_Name
+      value: LAMPADA INDUSTRIAL (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+--- !u!4 &3589992654267732947 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+  m_PrefabInstance: {fileID: 3916036217528824888}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4265375334295487554
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2427030602400937453}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.07038721
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.10617808
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0572441
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 61.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2392
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_Name
+      value: LAMPADA INDUSTRIAL (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+--- !u!4 &4376110403673400233 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+  m_PrefabInstance: {fileID: 4265375334295487554}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4879094443040194169
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2427030602400937453}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.07038721
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.10617808
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.23788065
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 61.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2392
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_Name
+      value: LAMPADA INDUSTRIAL (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+--- !u!4 &4917015960227109266 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+  m_PrefabInstance: {fileID: 4879094443040194169}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5496495704243442791
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2427030602400937453}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.07038721
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.10617808
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0572441
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 61.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.86950284
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_Name
+      value: LAMPADA INDUSTRIAL (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+--- !u!4 &5462233879007556492 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+  m_PrefabInstance: {fileID: 5496495704243442791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6186681400124230644
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2427030602400937453}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.07038721
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.10617808
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.23788065
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 61.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.86950284
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_Name
+      value: LAMPADA INDUSTRIAL (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+--- !u!4 &5931584345391672351 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+  m_PrefabInstance: {fileID: 6186681400124230644}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7704418059775247013
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2427030602400937453}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.07038721
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.10617808
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5189277
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 61.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.8743424
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5076484507258936684, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_Name
+      value: LAMPADA INDUSTRIAL
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+--- !u!4 &7881631514910221646 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+  m_PrefabInstance: {fileID: 7704418059775247013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8148288100510367094
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2427030602400937453}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.07038721
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.10617808
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.8351686
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 61.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2392
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+      propertyPath: m_Name
+      value: LAMPADA INDUSTRIAL (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+--- !u!4 &8547323733454035613 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0a69a21d99cd35843b226aba72a124d6, type: 3}
+  m_PrefabInstance: {fileID: 8148288100510367094}
+  m_PrefabAsset: {fileID: 0}
