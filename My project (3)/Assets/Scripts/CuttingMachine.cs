@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using TMPro;
 
 public class CuttingMachine : MonoBehaviour
@@ -32,6 +33,7 @@ public class CuttingMachine : MonoBehaviour
     private bool victory = false;
     private bool defeat = false;
     private float maxScore;
+    private bool pressStartedOnUI = false;
 
     void Start()
     {
@@ -63,7 +65,17 @@ public class CuttingMachine : MonoBehaviour
         if (victory || defeat)
             return;
 
+        if (Input.GetMouseButtonDown(0) && EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+        {
+            pressStartedOnUI = true;
+        }
+
         if (!Input.GetMouseButton(0))
+        {
+            pressStartedOnUI = false;
+        }
+
+        if (!Input.GetMouseButton(0) || pressStartedOnUI)
         {
             StopCutSound();
             UpdateProgress();
